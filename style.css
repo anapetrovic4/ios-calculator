@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.user-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.container {
+    margin: auto; /* Center the div */
+    background-color: black;
+    border: darkgray 3px solid;
+    border-radius: 55px;
+    height: 500px;
+    width: 260px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.first-row, .second-row, .third-row, .fourth-row, .fifth-row {
+    margin-bottom: 5px;
+}
+
+.result {
+    color: white;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-left: 160px;
+    color: white;
+    font-size: 55px;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 100;
+
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.zero {
+    width: 104px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+.gray:hover {
+    background-color: darkgray;
+}
+
+
+.orange {
+    background-color: orange;
+    color: white;
+}
+
+.orange:hover {
+    background-color: darkorange;
+}
+
+.number, .decimal {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.wifi, .signal, .battery {
+    width: 15px;
+    height: 15px;
+}
