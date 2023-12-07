@@ -28,6 +28,8 @@ decimal.addEventListener('click', function() {
     console.log('decimal clicked');
 });
 
+//Reset button
 reset.addEventListener('click', function() {    
     console.log('reset clicked');
+    result.textContent = 0;
 });
