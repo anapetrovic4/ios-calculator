@@ -54,16 +54,16 @@ p {
 }
 
 .result {
+    width: 100%;
     color: white;
-    text-align: center;
+    text-align: right;
     padding-top: 0;
     margin-bottom: 5px;
-    margin-left: 160px;
+    padding-right: 65px;
     color: white;
     font-size: 55px;
     font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: 100;
-
 }
 
 button {
