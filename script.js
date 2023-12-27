@@ -21,10 +21,7 @@ numbers.forEach((numbers) => {
 
 //Event listener for the decimal button
 decimal.addEventListener('click', function() {
-    if(!currentInput.toString().includes('.')){
-        currentInput += '.';
-        updateDisplay();
-    }
+    handleDecimalClick();
 });
 
 //Event listener for operations
@@ -34,22 +31,14 @@ operations.forEach((operation) => {
     });
 });
 
-// Event listener for the equal button
+//Event listener for the equal button
 equal.addEventListener('click', function () {
-    if (operator !== '') {
-        performOperation();
-        operator = '';
-    }
-    updateDisplay();
+    handleEqualClick();
 });
 
 //Event listener to handle reset button click
 reset.addEventListener('click', function() {
-    firstNumber = '';
-    currentInput = '0';
-    operator = '';
-    result.textContent = currentInput;
-    updateDisplay();
+    handleResetClick();
 });
 
 //Function to handle number clicks
@@ -69,7 +58,6 @@ function handleNumberClick(number){
     updateDisplay();
 }
 
-
 //Function to handle operation clicks
 function handleOperationClick(clickedOperator) {
     if (operator !== '') {
@@ -78,6 +66,30 @@ function handleOperationClick(clickedOperator) {
     operator = clickedOperator;
     firstNumber = currentInput;
     currentInput = '0';
+    updateDisplay();
+}
+
+//Function to handle decimal clicks
+function handleDecimalClick(){
+    if(!currentInput.toString().includes('.')){
+        currentInput += '.';
+        updateDisplay();
+    }
+}
+
+//Function to handle equal clicks
+function handleEqualClick(){
+    if (operator !== '') {
+        performOperation();
+        operator = '';
+    }
+    updateDisplay();
+}
+
+function handleResetClick(){
+    firstNumber = '';
+    currentInput = '0';
+    operator = '';
     updateDisplay();
 }
 
@@ -103,7 +115,6 @@ function performOperation() {
             break;
     }
 }
-
 
 //Function to update display
 function updateDisplay() {
